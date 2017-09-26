@@ -24,9 +24,9 @@ if __name__ == '__main__':
     while end == False:
 
         #takes 2 numbers and an operator from keyboard input
-        num1 = int(input('enter a number: '))
-        num2 = int(input('enter a second number: '))
-        op = input('select an operator(+,-,/,*): ')
+        num1 = int(raw_input('enter a number: '))
+        num2 = int(raw_input('enter a second number: '))
+        op = raw_input('select an operator(+,-,/,*): ')
 
         #selects function to call from operator
         if op == '+': print(add(num1,num2))
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         else: print("you have used an illegal operator")
 
         #ask to quit program
-        quit = input('would you like to quit(y/n)?')
+        quit = raw_input('would you like to quit(y/n)?')
 
         #close if true
         if quit == 'y': end = True
